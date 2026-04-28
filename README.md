@@ -15,6 +15,7 @@ Once deployed (see below), the site is available at:
 
 ```
 https://<your-github-username>.github.io/uncp-acm-website/
+https://mdfardinislamofficial.github.io/<repo-name>/
 ```
 
 ---
