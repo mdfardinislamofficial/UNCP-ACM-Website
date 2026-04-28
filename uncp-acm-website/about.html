@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UNCP ACM Chapter — About</title>
+  <meta name="description" content="Learn about the UNCP ACM Student Chapter — our mission, history, and what we stand for." />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>&#x1F4BB;</text></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: { extend: {
+        colors: { uncpgold: '#FFC629', uncpblack: '#0B0B0F', acmblue: '#0085CA', ink: '#111827' },
+        fontFamily: { sans: ['Inter','system-ui','sans-serif'], display: ['"Space Grotesk"','Inter','sans-serif'] }
+      } }
+    };
+  </script>
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body class="font-sans bg-white text-ink antialiased">
+  <header class="sticky top-0 z-50 bg-uncpblack/95 backdrop-blur text-white border-b border-white/10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex h-16 items-center justify-between">
+        <a href="index.html" class="flex items-center gap-2 font-display font-bold text-lg">
+          <span class="inline-flex items-center justify-center w-9 h-9 rounded-lg bg-uncpgold text-uncpblack">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="w-5 h-5"><path d="M3 7h18M3 12h18M3 17h12"/></svg>
+          </span>
+          <span>UNCP <span class="text-uncpgold">ACM</span></span>
+        </a>
+        <nav class="hidden md:flex items-center gap-7 text-sm font-medium">
+          <a href="index.html" class="hover:text-uncpgold transition-colors">Home</a>
+          <a href="about.html" class="text-uncpgold">About</a>
+          <a href="events.html" class="hover:text-uncpgold transition-colors">Events</a>
+          <a href="officers.html" class="hover:text-uncpgold transition-colors">Officers</a>
+          <a href="join.html" class="hover:text-uncpgold transition-colors">Join</a>
+          <a href="contact.html" class="hover:text-uncpgold transition-colors">Contact</a>
+        </nav>
+        <a href="join.html" class="hidden md:inline-flex items-center gap-2 rounded-full bg-uncpgold px-4 py-2 text-sm font-semibold text-uncpblack hover:bg-yellow-300 transition">
+          Become a Member
+        </a>
+        <button id="menu-btn" class="md:hidden inline-flex items-center justify-center w-10 h-10 rounded-md hover:bg-white/10" aria-label="Toggle menu">
+          <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+      </div>
+      <div id="mobile-menu" class="hidden md:hidden pb-4 space-y-1">
+        <a href="index.html" class="block px-3 py-2 rounded-md hover:bg-white/10">Home</a>
+        <a href="about.html" class="block px-3 py-2 rounded-md hover:bg-white/10 text-uncpgold">About</a>
+        <a href="events.html" class="block px-3 py-2 rounded-md hover:bg-white/10">Events</a>
+        <a href="officers.html" class="block px-3 py-2 rounded-md hover:bg-white/10">Officers</a>
+        <a href="join.html" class="block px-3 py-2 rounded-md hover:bg-white/10">Join</a>
+        <a href="contact.html" class="block px-3 py-2 rounded-md hover:bg-white/10">Contact</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Page hero -->
+  <section class="bg-uncpblack text-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-20">
+      <p class="text-sm font-semibold tracking-wider uppercase text-uncpgold">About the chapter</p>
+      <h1 class="mt-3 font-display text-4xl sm:text-5xl font-bold max-w-3xl">A community of computing students preparing for what's next.</h1>
+      <p class="mt-5 max-w-2xl text-white/80 text-lg">We are the official ACM student chapter at the University of North Carolina at Pembroke — a chartered branch of the world's largest scientific and educational computing society.</p>
+    </div>
+  </section>
+
+  <!-- Mission / Vision -->
+  <section class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-12">
+      <div>
+        <p class="text-sm font-semibold tracking-wider uppercase text-acmblue">Our mission</p>
+        <h2 class="mt-2 font-display text-3xl font-bold">Bridge the gap between the classroom and the industry.</h2>
+        <p class="mt-4 text-slate-600 leading-relaxed">The UNCP ACM Chapter exists to help every CS, IT, and CIS student at UNC Pembroke discover their path in computing — through hands-on workshops, peer mentorship, hackathons, and direct connections to alumni already working in the field.</p>
+        <p class="mt-4 text-slate-600 leading-relaxed">We believe that the best engineers aren't built by lectures alone — they're built in groups of friends pulling all-nighters, breaking things, fixing them, and shipping something they're proud of.</p>
+      </div>
+      <div class="rounded-2xl bg-slate-50 border border-slate-200 p-8">
+        <p class="text-sm font-semibold tracking-wider uppercase text-acmblue">Our vision</p>
+        <h3 class="mt-2 font-display text-2xl font-bold">Every UNCP grad should leave with...</h3>
+        <ul class="mt-6 space-y-4">
+          <li class="flex gap-3">
+            <span class="mt-1 w-6 h-6 rounded-full bg-uncpgold text-uncpblack flex items-center justify-center font-bold text-sm">1</span>
+            <span class="text-slate-700">A portfolio of real projects on GitHub.</span>
+          </li>
+          <li class="flex gap-3">
+            <span class="mt-1 w-6 h-6 rounded-full bg-uncpgold text-uncpblack flex items-center justify-center font-bold text-sm">2</span>
+            <span class="text-slate-700">At least one hackathon, internship, or research experience.</span>
+          </li>
+          <li class="flex gap-3">
+            <span class="mt-1 w-6 h-6 rounded-full bg-uncpgold text-uncpblack flex items-center justify-center font-bold text-sm">3</span>
+            <span class="text-slate-700">A network of friends, mentors, and alumni in the industry.</span>
+          </li>
+          <li class="flex gap-3">
+            <span class="mt-1 w-6 h-6 rounded-full bg-uncpgold text-uncpblack flex items-center justify-center font-bold text-sm">4</span>
+            <span class="text-slate-700">The confidence to ace any technical interview.</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- About ACM -->
+  <section class="py-20 bg-slate-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-3 gap-10 items-start">
+      <div class="lg:col-span-1">
+        <p class="text-sm font-semibold tracking-wider uppercase text-acmblue">What is ACM?</p>
+        <h2 class="mt-2 font-display text-3xl font-bold">The world's largest computing society.</h2>
+      </div>
+      <div class="lg:col-span-2 space-y-5 text-slate-700 leading-relaxed">
+        <p>The Association for Computing Machinery (ACM) is the world's largest scientific and educational computing society, with over 100,000 members across 190 countries. Founded in 1947, ACM brings together computing educators, researchers, and professionals to advance computing as a science and a profession.</p>
+        <p>As a chartered ACM Student Chapter, the UNCP ACM Chapter operates under the umbrella of national ACM. Our members get full access to the ACM Digital Library, free O'Reilly e-books, Skillsoft online courses, and discounted attendance at conferences like SIGCSE, CHI, and SIGGRAPH.</p>
+        <p class="text-sm">Visit <a href="https://www.acm.org" target="_blank" rel="noopener" class="text-acmblue font-semibold hover:underline">acm.org</a> to learn more about national ACM.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Timeline -->
+  <section class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <p class="text-sm font-semibold tracking-wider uppercase text-acmblue">Our story</p>
+      <h2 class="mt-2 font-display text-3xl font-bold">A short history of the UNCP ACM Chapter.</h2>
+      <ol class="mt-12 relative border-l-2 border-slate-200 ml-3 space-y-10">
+        <li class="ml-6">
+          <span class="absolute -left-3.5 mt-1 w-6 h-6 rounded-full bg-uncpgold border-4 border-white"></span>
+          <p class="text-sm font-mono text-slate-500">2014</p>
+          <h3 class="font-display text-xl font-semibold">Chapter founded.</h3>
+          <p class="text-slate-600 mt-1">A handful of CS majors at UNCP gathered in a Lumbee Hall classroom to charter the university's first ACM student chapter.</p>
+        </li>
+        <li class="ml-6">
+          <span class="absolute -left-3.5 mt-1 w-6 h-6 rounded-full bg-uncpgold border-4 border-white"></span>
+          <p class="text-sm font-mono text-slate-500">2017</p>
+          <h3 class="font-display text-xl font-semibold">First HackUNCP.</h3>
+          <p class="text-slate-600 mt-1">Hosted our first 24-hour hackathon — 40 students, 12 projects, one very tired faculty advisor.</p>
+        </li>
+        <li class="ml-6">
+          <span class="absolute -left-3.5 mt-1 w-6 h-6 rounded-full bg-uncpgold border-4 border-white"></span>
+          <p class="text-sm font-mono text-slate-500">2021</p>
+          <h3 class="font-display text-xl font-semibold">Recognized as ACM Outstanding Chapter.</h3>
+          <p class="text-slate-600 mt-1">National ACM named UNCP one of its Outstanding Student Chapters for community service and growth.</p>
+        </li>
+        <li class="ml-6">
+          <span class="absolute -left-3.5 mt-1 w-6 h-6 rounded-full bg-uncpgold border-4 border-white"></span>
+          <p class="text-sm font-mono text-slate-500">2024</p>
+          <h3 class="font-display text-xl font-semibold">Crossed 100 active members.</h3>
+          <p class="text-slate-600 mt-1">Membership doubled after the launch of weekly workshops and the chapter Discord server.</p>
+        </li>
+        <li class="ml-6">
+          <span class="absolute -left-3.5 mt-1 w-6 h-6 rounded-full bg-uncpgold border-4 border-white"></span>
+          <p class="text-sm font-mono text-slate-500">2026</p>
+          <h3 class="font-display text-xl font-semibold">New chapter website launched.</h3>
+          <p class="text-slate-600 mt-1">You're looking at it. Built by chapter members with a modern, accessible, mobile-first design.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- Values -->
+  <section class="py-20 bg-uncpblack text-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <p class="text-sm font-semibold tracking-wider uppercase text-uncpgold">What we stand for</p>
+      <h2 class="mt-2 font-display text-3xl font-bold">Our values.</h2>
+      <div class="mt-10 grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="rounded-2xl bg-white/5 border border-white/10 p-6">
+          <h3 class="font-display text-lg font-semibold text-uncpgold">Open by default</h3>
+          <p class="mt-2 text-sm text-white/70">Code, knowledge, and opportunity should be shared. Every workshop is free and recorded.</p>
+        </div>
+        <div class="rounded-2xl bg-white/5 border border-white/10 p-6">
+          <h3 class="font-display text-lg font-semibold text-uncpgold">Inclusive</h3>
+          <p class="mt-2 text-sm text-white/70">Every major, every background. You don't need a CS degree to belong here — you just need curiosity.</p>
+        </div>
+        <div class="rounded-2xl bg-white/5 border border-white/10 p-6">
+          <h3 class="font-display text-lg font-semibold text-uncpgold">Hands-on</h3>
+          <p class="mt-2 text-sm text-white/70">We learn by building. Every meeting walks away with code on a screen, not just slides.</p>
+        </div>
+        <div class="rounded-2xl bg-white/5 border border-white/10 p-6">
+          <h3 class="font-display text-lg font-semibold text-uncpgold">Student-led</h3>
+          <p class="mt-2 text-sm text-white/70">Officers are elected by members each spring. Every member gets a vote — and a chance to lead.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-uncpblack text-white/70 border-t border-white/10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 grid md:grid-cols-4 gap-8">
+      <div class="md:col-span-2">
+        <div class="flex items-center gap-2 font-display font-bold text-white text-lg">
+          <span class="inline-flex items-center justify-center w-9 h-9 rounded-lg bg-uncpgold text-uncpblack">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="w-5 h-5"><path d="M3 7h18M3 12h18M3 17h12"/></svg>
+          </span>
+          UNCP <span class="text-uncpgold">ACM</span>
+        </div>
+        <p class="mt-3 text-sm max-w-md">The official ACM student chapter at the University of North Carolina at Pembroke. Run by students, for students.</p>
+      </div>
+      <div>
+        <h4 class="text-white font-semibold mb-3 text-sm">Chapter</h4>
+        <ul class="space-y-2 text-sm">
+          <li><a href="about.html" class="hover:text-uncpgold">About</a></li>
+          <li><a href="events.html" class="hover:text-uncpgold">Events</a></li>
+          <li><a href="officers.html" class="hover:text-uncpgold">Officers</a></li>
+          <li><a href="join.html" class="hover:text-uncpgold">Join</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="text-white font-semibold mb-3 text-sm">Connect</h4>
+        <ul class="space-y-2 text-sm">
+          <li><a href="contact.html" class="hover:text-uncpgold">Contact</a></li>
+          <li><a href="https://www.acm.org" class="hover:text-uncpgold" target="_blank" rel="noopener">National ACM</a></li>
+          <li><a href="https://www.uncp.edu" class="hover:text-uncpgold" target="_blank" rel="noopener">UNC Pembroke</a></li>
+          <li><a href="https://github.com" class="hover:text-uncpgold" target="_blank" rel="noopener">GitHub</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="border-t border-white/10">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 text-xs flex flex-wrap justify-between gap-3">
+        <p>&copy; 2026 UNCP ACM Student Chapter. All rights reserved.</p>
+        <p>Built with care by the chapter members.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

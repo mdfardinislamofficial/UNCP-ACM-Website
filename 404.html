@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UNCP ACM Chapter — Page not found</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>&#x1F4BB;</text></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: { extend: {
+        colors: { uncpgold: '#FFC629', uncpblack: '#0B0B0F', acmblue: '#0085CA' },
+        fontFamily: { sans: ['Inter','system-ui','sans-serif'], display: ['"Space Grotesk"','Inter','sans-serif'] }
+      } }
+    };
+  </script>
+</head>
+<body class="font-sans bg-uncpblack text-white min-h-screen flex flex-col items-center justify-center text-center p-6">
+  <p class="font-mono text-uncpgold text-sm tracking-widest">ERROR 404</p>
+  <h1 class="mt-4 font-display text-6xl sm:text-7xl font-bold">404 / 200 OK?</h1>
+  <p class="mt-6 text-white/80 text-lg max-w-xl">The page you're looking for has been deleted, moved, or never existed in the first place. Don't worry, even the pros get null pointers.</p>
+  <pre class="mt-8 rounded-xl bg-white/10 border border-white/10 px-5 py-3 font-mono text-sm text-white/70">throw new Error("Page not found");</pre>
+  <a href="index.html" class="mt-8 inline-flex items-center gap-2 rounded-full bg-uncpgold px-6 py-3 text-sm font-semibold text-uncpblack hover:bg-yellow-300 transition">
+    Go home
+  </a>
+</body>
+</html>

@@ -1,0 +1,51 @@
+/* ==========================================================
+   UNCP ACM Chapter — Custom styles
+   These supplement Tailwind (loaded via CDN). Most styling
+   lives in utility classes. Anything that's tricky or
+   reusable lives here.
+   ========================================================== */
+
+/* Smooth in-page scrolling for anchor links */
+html { scroll-behavior: smooth; }
+
+/* Better focus rings (accessible) */
+:where(a, button, input, select, textarea):focus-visible {
+  outline: 2px solid #FFC629;
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+/* Subtle fade-in for sections when they enter the viewport */
+.fade-in {
+  opacity: 0;
+  transform: translateY(12px);
+  transition: opacity .6s ease, transform .6s ease;
+}
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Filter button "active" look (events page) */
+.filter-btn.active {
+  background-color: #0B0B0F;
+  color: #fff;
+  border-color: #0B0B0F;
+}
+
+/* Code-block scrollbar polish */
+pre::-webkit-scrollbar { height: 8px; }
+pre::-webkit-scrollbar-thumb {
+  background: rgba(255,255,255,0.15);
+  border-radius: 8px;
+}
+
+/* Hide details marker in browsers that show the default arrow */
+details > summary { list-style: none; }
+details > summary::-webkit-details-marker { display: none; }
+
+/* Print-friendly */
+@media print {
+  header, footer, .no-print { display: none !important; }
+  body { color: #000; background: #fff; }
+}

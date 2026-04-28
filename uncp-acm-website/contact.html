@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UNCP ACM Chapter — Contact</title>
+  <meta name="description" content="Reach the UNCP ACM Student Chapter — email, Discord, office hours, and meeting location." />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>&#x1F4BB;</text></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: { extend: {
+        colors: { uncpgold: '#FFC629', uncpblack: '#0B0B0F', acmblue: '#0085CA', ink: '#111827' },
+        fontFamily: { sans: ['Inter','system-ui','sans-serif'], display: ['"Space Grotesk"','Inter','sans-serif'] }
+      } }
+    };
+  </script>
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body class="font-sans bg-white text-ink antialiased">
+  <header class="sticky top-0 z-50 bg-uncpblack/95 backdrop-blur text-white border-b border-white/10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex h-16 items-center justify-between">
+        <a href="index.html" class="flex items-center gap-2 font-display font-bold text-lg">
+          <span class="inline-flex items-center justify-center w-9 h-9 rounded-lg bg-uncpgold text-uncpblack">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="w-5 h-5"><path d="M3 7h18M3 12h18M3 17h12"/></svg>
+          </span>
+          <span>UNCP <span class="text-uncpgold">ACM</span></span>
+        </a>
+        <nav class="hidden md:flex items-center gap-7 text-sm font-medium">
+          <a href="index.html" class="hover:text-uncpgold transition-colors">Home</a>
+          <a href="about.html" class="hover:text-uncpgold transition-colors">About</a>
+          <a href="events.html" class="hover:text-uncpgold transition-colors">Events</a>
+          <a href="officers.html" class="hover:text-uncpgold transition-colors">Officers</a>
+          <a href="join.html" class="hover:text-uncpgold transition-colors">Join</a>
+          <a href="contact.html" class="text-uncpgold">Contact</a>
+        </nav>
+        <a href="join.html" class="hidden md:inline-flex items-center gap-2 rounded-full bg-uncpgold px-4 py-2 text-sm font-semibold text-uncpblack hover:bg-yellow-300 transition">
+          Become a Member
+        </a>
+        <button id="menu-btn" class="md:hidden inline-flex items-center justify-center w-10 h-10 rounded-md hover:bg-white/10" aria-label="Toggle menu">
+          <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+      </div>
+      <div id="mobile-menu" class="hidden md:hidden pb-4 space-y-1">
+        <a href="index.html" class="block px-3 py-2 rounded-md hover:bg-white/10">Home</a>
+        <a href="about.html" class="block px-3 py-2 rounded-md hover:bg-white/10">About</a>
+        <a href="events.html" class="block px-3 py-2 rounded-md hover:bg-white/10">Events</a>
+        <a href="officers.html" class="block px-3 py-2 rounded-md hover:bg-white/10">Officers</a>
+        <a href="join.html" class="block px-3 py-2 rounded-md hover:bg-white/10">Join</a>
+        <a href="contact.html" class="block px-3 py-2 rounded-md hover:bg-white/10 text-uncpgold">Contact</a>
+      </div>
+    </div>
+  </header>
+
+  <section class="bg-uncpblack text-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-20">
+      <p class="text-sm font-semibold tracking-wider uppercase text-uncpgold">Contact</p>
+      <h1 class="mt-3 font-display text-4xl sm:text-5xl font-bold max-w-3xl">Got a question? We'd love to hear it.</h1>
+      <p class="mt-5 max-w-2xl text-white/80 text-lg">Whether you're a student curious about joining, a faculty member with a collaboration idea, or a recruiter wanting to host a tech talk — drop us a line.</p>
+    </div>
+  </section>
+
+  <!-- Contact methods + form -->
+  <section class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-5 gap-12">
+      <!-- Methods -->
+      <div class="lg:col-span-2 space-y-6">
+        <div class="rounded-2xl border border-slate-200 p-6">
+          <div class="w-11 h-11 rounded-xl bg-uncpgold/20 text-uncpblack flex items-center justify-center">
+            <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><path d="M22 6l-10 7L2 6"/></svg>
+          </div>
+          <h3 class="mt-4 font-display text-lg font-semibold">Email</h3>
+          <p class="mt-1 text-sm text-slate-600">For chapter inquiries, partnerships, or speaker requests.</p>
+          <a href="mailto:acm@uncp.edu" class="mt-3 inline-flex items-center gap-2 text-acmblue font-semibold hover:underline">acm@uncp.edu</a>
+        </div>
+        <div class="rounded-2xl border border-slate-200 p-6">
+          <div class="w-11 h-11 rounded-xl bg-acmblue/15 text-acmblue flex items-center justify-center">
+            <svg class="w-6 h-6" viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4a2 2 0 00-2 2v12a2 2 0 002 2h16a2 2 0 002-2V6a2 2 0 00-2-2zM8 12a2 2 0 110-4 2 2 0 010 4zm6 4H6v-1c0-1.1 2-2 4-2s4 .9 4 2v1zm4-3h-3v-1h3v1zm0-2h-3v-1h3v1zm0-2h-3V8h3v1z"/></svg>
+          </div>
+          <h3 class="mt-4 font-display text-lg font-semibold">Discord</h3>
+          <p class="mt-1 text-sm text-slate-600">Live chat with members and officers. Invite link is sent after you sign up.</p>
+          <a href="join.html" class="mt-3 inline-flex items-center gap-2 text-acmblue font-semibold hover:underline">Get the invite</a>
+        </div>
+        <div class="rounded-2xl border border-slate-200 p-6">
+          <div class="w-11 h-11 rounded-xl bg-emerald-100 text-emerald-700 flex items-center justify-center">
+            <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          </div>
+          <h3 class="mt-4 font-display text-lg font-semibold">Meet us in person</h3>
+          <p class="mt-1 text-sm text-slate-600">Wednesdays at 6:00 PM during the academic year.</p>
+          <p class="mt-3 text-sm text-slate-700">
+            Oxendine Science Building, Room 1234<br />
+            University of North Carolina at Pembroke<br />
+            One University Drive, Pembroke, NC 28372
+          </p>
+        </div>
+        <div class="rounded-2xl border border-slate-200 p-6">
+          <div class="w-11 h-11 rounded-xl bg-rose-100 text-rose-700 flex items-center justify-center">
+            <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+          </div>
+          <h3 class="mt-4 font-display text-lg font-semibold">Office hours</h3>
+          <p class="mt-1 text-sm text-slate-600">Officers hold open hours Tuesdays &amp; Thursdays in the CS Lounge.</p>
+          <p class="mt-2 text-sm text-slate-700">Tue / Thu · 2:00 – 4:00 PM</p>
+        </div>
+      </div>
+
+      <!-- Form -->
+      <div class="lg:col-span-3">
+        <div class="rounded-2xl bg-slate-50 border border-slate-200 p-8">
+          <h2 class="font-display text-2xl font-bold">Send us a message</h2>
+          <p class="mt-2 text-slate-600 text-sm">This opens your default email client with everything pre-filled. We respond within 1 business day.</p>
+          <form id="contact-form" class="mt-6 space-y-5">
+            <div class="grid sm:grid-cols-2 gap-5">
+              <div>
+                <label for="cname" class="block text-sm font-semibold mb-1">Your name</label>
+                <input id="cname" name="cname" required type="text" class="w-full rounded-lg border border-slate-300 px-4 py-2.5 bg-white focus:outline-none focus:ring-2 focus:ring-acmblue focus:border-acmblue" />
+              </div>
+              <div>
+                <label for="cemail" class="block text-sm font-semibold mb-1">Your email</label>
+                <input id="cemail" name="cemail" required type="email" class="w-full rounded-lg border border-slate-300 px-4 py-2.5 bg-white focus:outline-none focus:ring-2 focus:ring-acmblue focus:border-acmblue" />
+              </div>
+            </div>
+            <div>
+              <label for="ctopic" class="block text-sm font-semibold mb-1">Topic</label>
+              <select id="ctopic" name="ctopic" class="w-full rounded-lg border border-slate-300 px-4 py-2.5 bg-white focus:outline-none focus:ring-2 focus:ring-acmblue focus:border-acmblue">
+                <option>General question</option>
+                <option>Joining the chapter</option>
+                <option>Speaker / tech talk request</option>
+                <option>Sponsorship / partnership</option>
+                <option>Hackathon</option>
+                <option>K-12 outreach</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <div>
+              <label for="cmessage" class="block text-sm font-semibold mb-1">Message</label>
+              <textarea id="cmessage" name="cmessage" required rows="5" class="w-full rounded-lg border border-slate-300 px-4 py-2.5 bg-white focus:outline-none focus:ring-2 focus:ring-acmblue focus:border-acmblue"></textarea>
+            </div>
+            <button type="submit" class="inline-flex items-center justify-center gap-2 rounded-full bg-uncpblack text-white px-6 py-3 text-sm font-semibold hover:bg-black transition">
+              Send Message
+              <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+            </button>
+            <p id="contact-status" class="text-sm text-slate-500 hidden"></p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Map embed (static) -->
+  <section class="py-20 bg-slate-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <p class="text-sm font-semibold tracking-wider uppercase text-acmblue">Find us</p>
+      <h2 class="mt-2 font-display text-3xl font-bold">UNC Pembroke campus.</h2>
+      <p class="mt-3 text-slate-600 max-w-2xl">Oxendine Science Building sits in the heart of campus, just behind Lumbee Hall. Free student parking is available in Lot 12.</p>
+      <div class="mt-8 rounded-2xl overflow-hidden border border-slate-200 aspect-[16/9]">
+        <iframe
+          title="UNCP campus map"
+          src="https://www.openstreetmap.org/export/embed.html?bbox=-79.2106%2C34.6810%2C-79.1922%2C34.6920&amp;layer=mapnik&amp;marker=34.6864%2C-79.2014"
+          loading="lazy"
+          class="w-full h-full border-0"
+        ></iframe>
+      </div>
+      <p class="mt-3 text-xs text-slate-500">Map data &copy; <a href="https://www.openstreetmap.org/copyright" class="underline" target="_blank" rel="noopener">OpenStreetMap</a> contributors.</p>
+    </div>
+  </section>
+
+  <footer class="bg-uncpblack text-white/70 border-t border-white/10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 grid md:grid-cols-4 gap-8">
+      <div class="md:col-span-2">
+        <div class="flex items-center gap-2 font-display font-bold text-white text-lg">
+          <span class="inline-flex items-center justify-center w-9 h-9 rounded-lg bg-uncpgold text-uncpblack">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="w-5 h-5"><path d="M3 7h18M3 12h18M3 17h12"/></svg>
+          </span>
+          UNCP <span class="text-uncpgold">ACM</span>
+        </div>
+        <p class="mt-3 text-sm max-w-md">The official ACM student chapter at the University of North Carolina at Pembroke. Run by students, for students.</p>
+      </div>
+      <div>
+        <h4 class="text-white font-semibold mb-3 text-sm">Chapter</h4>
+        <ul class="space-y-2 text-sm">
+          <li><a href="about.html" class="hover:text-uncpgold">About</a></li>
+          <li><a href="events.html" class="hover:text-uncpgold">Events</a></li>
+          <li><a href="officers.html" class="hover:text-uncpgold">Officers</a></li>
+          <li><a href="join.html" class="hover:text-uncpgold">Join</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="text-white font-semibold mb-3 text-sm">Connect</h4>
+        <ul class="space-y-2 text-sm">
+          <li><a href="contact.html" class="hover:text-uncpgold">Contact</a></li>
+          <li><a href="https://www.acm.org" class="hover:text-uncpgold" target="_blank" rel="noopener">National ACM</a></li>
+          <li><a href="https://www.uncp.edu" class="hover:text-uncpgold" target="_blank" rel="noopener">UNC Pembroke</a></li>
+          <li><a href="https://github.com" class="hover:text-uncpgold" target="_blank" rel="noopener">GitHub</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="border-t border-white/10">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 text-xs flex flex-wrap justify-between gap-3">
+        <p>&copy; 2026 UNCP ACM Student Chapter. All rights reserved.</p>
+        <p>Built with care by the chapter members.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

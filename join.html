@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UNCP ACM Chapter — Join</title>
+  <meta name="description" content="Become a member of the UNCP ACM Chapter. Free for UNCP students. Three steps to get started." />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>&#x1F4BB;</text></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: { extend: {
+        colors: { uncpgold: '#FFC629', uncpblack: '#0B0B0F', acmblue: '#0085CA', ink: '#111827' },
+        fontFamily: { sans: ['Inter','system-ui','sans-serif'], display: ['"Space Grotesk"','Inter','sans-serif'] }
+      } }
+    };
+  </script>
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body class="font-sans bg-white text-ink antialiased">
+  <header class="sticky top-0 z-50 bg-uncpblack/95 backdrop-blur text-white border-b border-white/10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex h-16 items-center justify-between">
+        <a href="index.html" class="flex items-center gap-2 font-display font-bold text-lg">
+          <span class="inline-flex items-center justify-center w-9 h-9 rounded-lg bg-uncpgold text-uncpblack">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="w-5 h-5"><path d="M3 7h18M3 12h18M3 17h12"/></svg>
+          </span>
+          <span>UNCP <span class="text-uncpgold">ACM</span></span>
+        </a>
+        <nav class="hidden md:flex items-center gap-7 text-sm font-medium">
+          <a href="index.html" class="hover:text-uncpgold transition-colors">Home</a>
+          <a href="about.html" class="hover:text-uncpgold transition-colors">About</a>
+          <a href="events.html" class="hover:text-uncpgold transition-colors">Events</a>
+          <a href="officers.html" class="hover:text-uncpgold transition-colors">Officers</a>
+          <a href="join.html" class="text-uncpgold">Join</a>
+          <a href="contact.html" class="hover:text-uncpgold transition-colors">Contact</a>
+        </nav>
+        <a href="#signup-form" class="hidden md:inline-flex items-center gap-2 rounded-full bg-uncpgold px-4 py-2 text-sm font-semibold text-uncpblack hover:bg-yellow-300 transition">
+          Sign Up Now
+        </a>
+        <button id="menu-btn" class="md:hidden inline-flex items-center justify-center w-10 h-10 rounded-md hover:bg-white/10" aria-label="Toggle menu">
+          <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+      </div>
+      <div id="mobile-menu" class="hidden md:hidden pb-4 space-y-1">
+        <a href="index.html" class="block px-3 py-2 rounded-md hover:bg-white/10">Home</a>
+        <a href="about.html" class="block px-3 py-2 rounded-md hover:bg-white/10">About</a>
+        <a href="events.html" class="block px-3 py-2 rounded-md hover:bg-white/10">Events</a>
+        <a href="officers.html" class="block px-3 py-2 rounded-md hover:bg-white/10">Officers</a>
+        <a href="join.html" class="block px-3 py-2 rounded-md hover:bg-white/10 text-uncpgold">Join</a>
+        <a href="contact.html" class="block px-3 py-2 rounded-md hover:bg-white/10">Contact</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="bg-uncpblack text-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-20 grid lg:grid-cols-2 gap-10 items-center">
+      <div>
+        <p class="text-sm font-semibold tracking-wider uppercase text-uncpgold">Membership</p>
+        <h1 class="mt-3 font-display text-4xl sm:text-5xl font-bold">Free for UNCP students. Always.</h1>
+        <p class="mt-5 text-white/80 text-lg max-w-xl">Chapter membership unlocks every workshop, every social, the full Discord, and a one-on-one mentor match. National ACM membership ($20/yr for students) is optional but unlocks the Digital Library, O'Reilly books, and Skillsoft.</p>
+        <div class="mt-8 flex flex-wrap gap-3">
+          <a href="#signup-form" class="inline-flex items-center gap-2 rounded-full bg-uncpgold px-6 py-3 text-sm font-semibold text-uncpblack hover:bg-yellow-300 transition">Sign up</a>
+          <a href="#tiers" class="inline-flex items-center gap-2 rounded-full bg-white/10 border border-white/20 px-6 py-3 text-sm font-semibold hover:bg-white/20 transition">Compare tiers</a>
+        </div>
+      </div>
+      <div class="rounded-2xl bg-white/5 border border-white/10 p-8">
+        <p class="text-sm text-white/70 mb-4 font-semibold tracking-wider uppercase">By the numbers</p>
+        <dl class="grid grid-cols-2 gap-6">
+          <div>
+            <dt class="text-4xl font-display font-bold text-uncpgold">$0</dt>
+            <dd class="mt-1 text-sm text-white/70">Chapter dues</dd>
+          </div>
+          <div>
+            <dt class="text-4xl font-display font-bold text-uncpgold">25+</dt>
+            <dd class="mt-1 text-sm text-white/70">Events / year</dd>
+          </div>
+          <div>
+            <dt class="text-4xl font-display font-bold text-uncpgold">2 min</dt>
+            <dd class="mt-1 text-sm text-white/70">To sign up</dd>
+          </div>
+          <div>
+            <dt class="text-4xl font-display font-bold text-uncpgold">∞</dt>
+            <dd class="mt-1 text-sm text-white/70">Slices of pizza</dd>
+          </div>
+        </dl>
+      </div>
+    </div>
+  </section>
+
+  <!-- Steps -->
+  <section class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <p class="text-sm font-semibold tracking-wider uppercase text-acmblue">How it works</p>
+      <h2 class="mt-2 font-display text-3xl font-bold">Three steps to get in.</h2>
+      <ol class="mt-12 grid md:grid-cols-3 gap-6">
+        <li class="rounded-2xl border border-slate-200 p-6">
+          <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-uncpgold text-uncpblack font-bold">1</span>
+          <h3 class="mt-4 font-display text-xl font-semibold">Fill out the form below</h3>
+          <p class="mt-2 text-slate-600 text-sm">Takes about two minutes. We just need your name, UNCP email, and which CS topics you want to learn most.</p>
+        </li>
+        <li class="rounded-2xl border border-slate-200 p-6">
+          <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-uncpgold text-uncpblack font-bold">2</span>
+          <h3 class="mt-4 font-display text-xl font-semibold">Join the Discord</h3>
+          <p class="mt-2 text-slate-600 text-sm">After you submit, you'll get an email with the Discord invite, the calendar, and a welcome from your matched mentor.</p>
+        </li>
+        <li class="rounded-2xl border border-slate-200 p-6">
+          <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-uncpgold text-uncpblack font-bold">3</span>
+          <h3 class="mt-4 font-display text-xl font-semibold">Show up to a meeting</h3>
+          <p class="mt-2 text-slate-600 text-sm">Wednesdays at 6:00 PM in Oxendine Science 1234. Bring your laptop. Pizza is on us.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- Tiers -->
+  <section id="tiers" class="py-20 bg-slate-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <p class="text-sm font-semibold tracking-wider uppercase text-acmblue">Membership tiers</p>
+      <h2 class="mt-2 font-display text-3xl font-bold">Pick the level that fits.</h2>
+      <p class="mt-3 text-slate-600 max-w-2xl">Both tiers get you full access to chapter events. The "ACM Member+" tier just adds national ACM benefits on top.</p>
+      <div class="mt-12 grid md:grid-cols-2 gap-6">
+        <article class="rounded-2xl bg-white p-8 border border-slate-200">
+          <p class="text-xs font-semibold tracking-wider uppercase text-slate-500">Chapter Member</p>
+          <p class="mt-3 font-display text-4xl font-bold">Free</p>
+          <p class="mt-1 text-sm text-slate-500">For all UNCP students</p>
+          <ul class="mt-6 space-y-3 text-sm">
+            <li class="flex gap-3"><svg class="w-5 h-5 text-emerald-500 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 13l4 4L19 7"/></svg> Weekly workshops &amp; tech talks</li>
+            <li class="flex gap-3"><svg class="w-5 h-5 text-emerald-500 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 13l4 4L19 7"/></svg> Discord access &amp; mentor match</li>
+            <li class="flex gap-3"><svg class="w-5 h-5 text-emerald-500 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 13l4 4L19 7"/></svg> HackUNCP entry &amp; prizes</li>
+            <li class="flex gap-3"><svg class="w-5 h-5 text-emerald-500 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 13l4 4L19 7"/></svg> Resume reviews &amp; mock interviews</li>
+            <li class="flex gap-3"><svg class="w-5 h-5 text-emerald-500 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 13l4 4L19 7"/></svg> Game nights, study halls, social events</li>
+          </ul>
+          <a href="#signup-form" class="mt-8 inline-flex items-center justify-center w-full gap-2 rounded-full bg-uncpblack text-white px-6 py-3 text-sm font-semibold hover:bg-black transition">Sign up free</a>
+        </article>
+        <article class="rounded-2xl bg-uncpblack text-white p-8 border-2 border-uncpgold relative">
+          <span class="absolute -top-3 right-6 bg-uncpgold text-uncpblack text-xs font-bold tracking-wider uppercase px-3 py-1 rounded-full">Recommended</span>
+          <p class="text-xs font-semibold tracking-wider uppercase text-uncpgold">ACM Member+</p>
+          <p class="mt-3 font-display text-4xl font-bold">$20<span class="text-base text-white/60 font-normal"> / year</span></p>
+          <p class="mt-1 text-sm text-white/60">National ACM dues, paid directly to ACM</p>
+          <ul class="mt-6 space-y-3 text-sm">
+            <li class="flex gap-3"><svg class="w-5 h-5 text-uncpgold shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 13l4 4L19 7"/></svg> <span><strong>Everything in Chapter Member</strong></span></li>
+            <li class="flex gap-3"><svg class="w-5 h-5 text-uncpgold shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 13l4 4L19 7"/></svg> Full ACM Digital Library access</li>
+            <li class="flex gap-3"><svg class="w-5 h-5 text-uncpgold shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 13l4 4L19 7"/></svg> O'Reilly e-books &amp; videos</li>
+            <li class="flex gap-3"><svg class="w-5 h-5 text-uncpgold shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 13l4 4L19 7"/></svg> Skillsoft tech &amp; soft-skill courses</li>
+            <li class="flex gap-3"><svg class="w-5 h-5 text-uncpgold shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 13l4 4L19 7"/></svg> Discounted ACM conferences (SIGCSE, etc.)</li>
+            <li class="flex gap-3"><svg class="w-5 h-5 text-uncpgold shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 13l4 4L19 7"/></svg> Eligible for ACM scholarships</li>
+          </ul>
+          <a href="https://www.acm.org/membership/membership-options" target="_blank" rel="noopener" class="mt-8 inline-flex items-center justify-center w-full gap-2 rounded-full bg-uncpgold text-uncpblack px-6 py-3 text-sm font-semibold hover:bg-yellow-300 transition">Join National ACM</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Signup form -->
+  <section id="signup-form" class="py-20 bg-white">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+      <p class="text-sm font-semibold tracking-wider uppercase text-acmblue">Sign-up form</p>
+      <h2 class="mt-2 font-display text-3xl font-bold">Two minutes, then you're in.</h2>
+      <p class="mt-3 text-slate-600">This form opens your email client with a pre-filled message to the chapter secretary. We'll respond within 24 hours with the Discord invite.</p>
+      <form id="join-form" class="mt-10 space-y-5">
+        <div class="grid sm:grid-cols-2 gap-5">
+          <div>
+            <label for="firstname" class="block text-sm font-semibold mb-1">First name</label>
+            <input id="firstname" name="firstname" required type="text" class="w-full rounded-lg border border-slate-300 px-4 py-2.5 focus:outline-none focus:ring-2 focus:ring-acmblue focus:border-acmblue" />
+          </div>
+          <div>
+            <label for="lastname" class="block text-sm font-semibold mb-1">Last name</label>
+            <input id="lastname" name="lastname" required type="text" class="w-full rounded-lg border border-slate-300 px-4 py-2.5 focus:outline-none focus:ring-2 focus:ring-acmblue focus:border-acmblue" />
+          </div>
+        </div>
+        <div>
+          <label for="email" class="block text-sm font-semibold mb-1">UNCP email</label>
+          <input id="email" name="email" required type="email" placeholder="you@bravemail.uncp.edu" class="w-full rounded-lg border border-slate-300 px-4 py-2.5 focus:outline-none focus:ring-2 focus:ring-acmblue focus:border-acmblue" />
+        </div>
+        <div class="grid sm:grid-cols-2 gap-5">
+          <div>
+            <label for="major" class="block text-sm font-semibold mb-1">Major</label>
+            <select id="major" name="major" class="w-full rounded-lg border border-slate-300 px-4 py-2.5 focus:outline-none focus:ring-2 focus:ring-acmblue focus:border-acmblue bg-white">
+              <option>Computer Science</option>
+              <option>Information Technology</option>
+              <option>Computer Information Systems</option>
+              <option>Mathematics</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div>
+            <label for="year" class="block text-sm font-semibold mb-1">Year</label>
+            <select id="year" name="year" class="w-full rounded-lg border border-slate-300 px-4 py-2.5 focus:outline-none focus:ring-2 focus:ring-acmblue focus:border-acmblue bg-white">
+              <option>Freshman</option>
+              <option>Sophomore</option>
+              <option>Junior</option>
+              <option>Senior</option>
+              <option>Graduate</option>
+            </select>
+          </div>
+        </div>
+        <div>
+          <label class="block text-sm font-semibold mb-1">Topics of interest <span class="text-slate-400 font-normal">(check all that apply)</span></label>
+          <div class="grid sm:grid-cols-2 gap-2 mt-2 text-sm">
+            <label class="flex items-center gap-2"><input type="checkbox" name="interests" value="Web Development" class="w-4 h-4 accent-acmblue" /> Web Development</label>
+            <label class="flex items-center gap-2"><input type="checkbox" name="interests" value="AI / Machine Learning" class="w-4 h-4 accent-acmblue" /> AI / Machine Learning</label>
+            <label class="flex items-center gap-2"><input type="checkbox" name="interests" value="Cybersecurity" class="w-4 h-4 accent-acmblue" /> Cybersecurity</label>
+            <label class="flex items-center gap-2"><input type="checkbox" name="interests" value="Game Development" class="w-4 h-4 accent-acmblue" /> Game Development</label>
+            <label class="flex items-center gap-2"><input type="checkbox" name="interests" value="Mobile Apps" class="w-4 h-4 accent-acmblue" /> Mobile Apps</label>
+            <label class="flex items-center gap-2"><input type="checkbox" name="interests" value="Data Science" class="w-4 h-4 accent-acmblue" /> Data Science</label>
+            <label class="flex items-center gap-2"><input type="checkbox" name="interests" value="Cloud / DevOps" class="w-4 h-4 accent-acmblue" /> Cloud / DevOps</label>
+            <label class="flex items-center gap-2"><input type="checkbox" name="interests" value="Hardware / IoT" class="w-4 h-4 accent-acmblue" /> Hardware / IoT</label>
+          </div>
+        </div>
+        <div>
+          <label for="message" class="block text-sm font-semibold mb-1">Anything else? <span class="text-slate-400 font-normal">(optional)</span></label>
+          <textarea id="message" name="message" rows="3" class="w-full rounded-lg border border-slate-300 px-4 py-2.5 focus:outline-none focus:ring-2 focus:ring-acmblue focus:border-acmblue"></textarea>
+        </div>
+        <button type="submit" class="inline-flex items-center justify-center gap-2 rounded-full bg-uncpblack text-white px-6 py-3 text-sm font-semibold hover:bg-black transition">
+          Submit &amp; Open Email
+          <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+        </button>
+        <p id="form-status" class="text-sm text-slate-500 hidden"></p>
+        <p class="text-xs text-slate-500">By submitting, you agree to receive chapter announcements at the email above. We never share your data.</p>
+      </form>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="py-20 bg-slate-50">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <p class="text-sm font-semibold tracking-wider uppercase text-acmblue">FAQ</p>
+      <h2 class="mt-2 font-display text-3xl font-bold">Common questions.</h2>
+      <div class="mt-10 space-y-4">
+        <details class="rounded-xl bg-white border border-slate-200 p-5 group">
+          <summary class="cursor-pointer flex justify-between items-center font-semibold list-none">
+            Do I have to be a CS major?
+            <svg class="w-5 h-5 text-slate-400 group-open:rotate-180 transition" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+          </summary>
+          <p class="mt-3 text-sm text-slate-600">Nope. CS, IT, CIS, math, engineering, even art majors learning to code — all welcome. Curiosity beats credentials here.</p>
+        </details>
+        <details class="rounded-xl bg-white border border-slate-200 p-5 group">
+          <summary class="cursor-pointer flex justify-between items-center font-semibold list-none">
+            Is there a GPA requirement?
+            <svg class="w-5 h-5 text-slate-400 group-open:rotate-180 transition" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+          </summary>
+          <p class="mt-3 text-sm text-slate-600">None. We're a community, not an honor society. If anything, struggling classes is the best reason to join — we run study groups every week.</p>
+        </details>
+        <details class="rounded-xl bg-white border border-slate-200 p-5 group">
+          <summary class="cursor-pointer flex justify-between items-center font-semibold list-none">
+            What if I've never coded before?
+            <svg class="w-5 h-5 text-slate-400 group-open:rotate-180 transition" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+          </summary>
+          <p class="mt-3 text-sm text-slate-600">Perfect. Many of our members started exactly there. We run beginner workshops the first Wednesday of every month, and our mentors are happy to start from absolute scratch.</p>
+        </details>
+        <details class="rounded-xl bg-white border border-slate-200 p-5 group">
+          <summary class="cursor-pointer flex justify-between items-center font-semibold list-none">
+            Do I need national ACM membership?
+            <svg class="w-5 h-5 text-slate-400 group-open:rotate-180 transition" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+          </summary>
+          <p class="mt-3 text-sm text-slate-600">No, it's optional. You can attend everything we host as a free chapter member. National ACM ($20/yr) just adds the Digital Library, O'Reilly, and Skillsoft on top.</p>
+        </details>
+        <details class="rounded-xl bg-white border border-slate-200 p-5 group">
+          <summary class="cursor-pointer flex justify-between items-center font-semibold list-none">
+            Can I attend a meeting before joining?
+            <svg class="w-5 h-5 text-slate-400 group-open:rotate-180 transition" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+          </summary>
+          <p class="mt-3 text-sm text-slate-600">Yes — please do! All meetings are open. Just walk in: Oxendine Science 1234, Wednesdays at 6:00 PM.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-uncpblack text-white/70 border-t border-white/10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 grid md:grid-cols-4 gap-8">
+      <div class="md:col-span-2">
+        <div class="flex items-center gap-2 font-display font-bold text-white text-lg">
+          <span class="inline-flex items-center justify-center w-9 h-9 rounded-lg bg-uncpgold text-uncpblack">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="w-5 h-5"><path d="M3 7h18M3 12h18M3 17h12"/></svg>
+          </span>
+          UNCP <span class="text-uncpgold">ACM</span>
+        </div>
+        <p class="mt-3 text-sm max-w-md">The official ACM student chapter at the University of North Carolina at Pembroke. Run by students, for students.</p>
+      </div>
+      <div>
+        <h4 class="text-white font-semibold mb-3 text-sm">Chapter</h4>
+        <ul class="space-y-2 text-sm">
+          <li><a href="about.html" class="hover:text-uncpgold">About</a></li>
+          <li><a href="events.html" class="hover:text-uncpgold">Events</a></li>
+          <li><a href="officers.html" class="hover:text-uncpgold">Officers</a></li>
+          <li><a href="join.html" class="hover:text-uncpgold">Join</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="text-white font-semibold mb-3 text-sm">Connect</h4>
+        <ul class="space-y-2 text-sm">
+          <li><a href="contact.html" class="hover:text-uncpgold">Contact</a></li>
+          <li><a href="https://www.acm.org" class="hover:text-uncpgold" target="_blank" rel="noopener">National ACM</a></li>
+          <li><a href="https://www.uncp.edu" class="hover:text-uncpgold" target="_blank" rel="noopener">UNC Pembroke</a></li>
+          <li><a href="https://github.com" class="hover:text-uncpgold" target="_blank" rel="noopener">GitHub</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="border-t border-white/10">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 text-xs flex flex-wrap justify-between gap-3">
+        <p>&copy; 2026 UNCP ACM Student Chapter. All rights reserved.</p>
+        <p>Built with care by the chapter members.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
